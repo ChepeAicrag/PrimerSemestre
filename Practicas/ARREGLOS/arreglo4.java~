@@ -1,0 +1,9 @@
+public class arreglo4
+{
+   public static void main(){  //metodo pburbuja
+   char [] vec={'a','b','c','d','f','g','h','i'};
+   for(int i=0;i<8;i++){
+    System.out.println("Arrelgo en la posicion ["+i+"]"+"="+vec[i]);
+    }
+    }
+}

@@ -1,0 +1,21 @@
+
+/*hola */
+import java.util.*;
+public class IFANIDADO
+{
+    public static void main(String[]args){
+    int a,b;
+    Scanner n=new Scanner(System.in);
+    System.out.println("Introduce el valor de a");
+    a=n.nextInt();
+    System.out.println("Introduce el valor de b");
+    b=n.nextInt();
+    if(a==0){
+     System.out.println("Imposible");
+    }
+    if (a<0){
+    
+    }
+    }
+    
+}

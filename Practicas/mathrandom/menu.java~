@@ -1,0 +1,23 @@
+/***/
+import java.util.*;
+public class menu
+{
+   public static void main(String[]args){
+       Scanner c= new Scanner(System.in);
+       System.out.println("Selecciones lo que desee ordenar\n a-\tTacos $30\n b-\tSpaguetti $90\n c-\tEnchiladas $60\n");
+       char p=c.next().charAt(0);
+       switch(p){
+       case 'a':
+       System.out.println("Hola, eligio una orden de tacos, pagara un total de 30,espere su orden un momento");
+       break;
+       case 'b':
+       System.out.println("Hola, elegiste una orden de spaguetti, pagara un total de 90, espere su orden un momento");
+       break;
+       case 'c':
+       System.out.println("Hola, elegiste una orden de enchiladas, pagara un total de 60, espere su orden un momento");
+       break;
+       default:
+       System.out.println("Error");
+    }
+    }
+}

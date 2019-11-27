@@ -1,0 +1,22 @@
+/**programa que dibuje una estrella 
+  */
+import java.util.*;
+public class examen3
+{
+   public static void main(){
+   Scanner op=new Scanner (System.in);
+   System.out.println("Introduce el tamaño de la estrella");
+   int t=op.nextInt();
+	for(int i=1; i<=t; i++){ 
+           for(int es=t-i; es>0; es--){//controla espacios       
+               System.out.print(" ");
+           }
+           for(int p1=1;p1<2*i;p1++){
+            System.out.printf("*");
+            }  
+        
+           System.out.printf("\n"); 
+        }
+         
+    }
+}

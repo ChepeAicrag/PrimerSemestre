@@ -1,0 +1,30 @@
+
+/**
+ * Write a description of class primo here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.*;
+public class primo
+{
+   public static void main(){
+      Scanner sc=new Scanner(System.in); 
+      System.out.println("Introduce el numero");
+      int num=sc.nextInt();
+      int d=0,p=0;
+      for(int m=1;m<=num;m++){
+                if(num%m==0){ 
+                 d++;
+                }
+           }
+                if(d==2){
+                 System.out.println("Si calaaa");
+                 }  
+                 else{
+                    System,out,println("Nel ni madres");
+                    }
+           }
+    
+    }
+

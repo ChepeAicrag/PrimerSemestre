@@ -1,0 +1,33 @@
+import java.util.*;
+public class pacalcombinacion
+{
+ public static void main(){   
+    Scanner p= new Scanner(System.in);
+    System.out.println("Introduce el nivel del piso");
+    int ni=p.nextInt();     
+    for(int i=0;i<ni;i++){      
+      for( int x=0;x<=(ni-i);x++){ //for para los espacios
+         System.out.print(" ");
+       }
+      for(int t=i;t>=0;t--){ //for para controlar la repeticion de las combinaciones 
+         int m=1;
+         int k=1;
+         int l=1;
+         int h=i-t;
+           for(int c=m;c<=i;c++){ //para factorial de el nivel que no se mueve
+             m*=c; 
+            }
+           for(int c=k;c<=t;c++){ //para factorial de k
+            k*=c;
+            }
+           for(int c=l;c<=h;c++){ //factorial de la diferencia de n y k
+             l*=c;
+            }
+            long d=k*l;
+            int r=(m/d);
+               System.out.print(r+" ");
+      }
+         System.out.println(" ");
+ }  
+      }
+    }

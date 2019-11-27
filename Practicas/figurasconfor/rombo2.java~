@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+class rombo{
+	public static void main(String[] args) {
+
+		int numero =13;
+	for (int fila=1;fila<=numero ;fila=fila+2 ) {
+		for (int espacios=fila; espacios<=numero; espacios=espacios+2) {
+		System.out.print(" ");
+		}
+        for (int estrella=0;estrella<fila ;estrella++ ) {
+		System.out.print("*");
+        }
+		System.out.print("\n");
+
+	}
+
+	for (int fila=(numero-2);fila>=1 ;fila=fila-2 ) {
+		for (int espacios=fila; espacios<=numero; espacios=espacios+2) {
+		System.out.print(" ");
+		}
+        for (int estrella=0;estrella<fila ;estrella++ ) {
+		System.out.print("*");
+        }
+		System.out.print("\n");
+
+	}
+
+	}
+}

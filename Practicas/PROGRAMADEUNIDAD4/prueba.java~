@@ -1,0 +1,38 @@
+import java.util.*;
+public class prueba
+{ 
+    public static int[][] llena1(){
+    Scanner leer=new Scanner(System.in); 
+    System.out.println("Introduce el valor de la fila");
+    int f=leer.nextInt();
+      System.out.println("Introduce el valor de la columna");
+      int c=leer.nextInt();
+    int mat1[][]=new int [f][c];
+    for(int i=0;i<f;i++){
+     for(int j=0;j<c;j++){
+         System.out.printf("Introduce el elemento del arreglo["+i+"]["+j+"]:");
+         mat1[i][j]=leer.nextInt();
+     }
+    } 
+    return mat1;
+    }
+    public static void imprimir(int matriz[][],int f, int c){ 
+    for(int i=0;i<f;i++){
+     for(int j=0;j<c;j++){
+        System.out.printf(matriz[i][j]+"\t");
+     }
+     System.out.println("");
+    }
+    } 
+        public static void main(){
+      Scanner leer=new Scanner(System.in);
+      System.out.println("Introuce lo requerido para matriz 1");
+      int matriz1[][]=llena1();
+      System.out.println("\nIntrouce lo requerido para matriz 2");
+      int matriz2[][]=llena1();
+      imprimir(matriz1,f,c);
+      System.out.println("");
+      imprimir(matriz2,f,c);
+      
+    }  
+}

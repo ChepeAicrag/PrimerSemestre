@@ -1,0 +1,22 @@
+
+public class viernes23
+{
+    public static void main(){
+    int f=7,c=5;
+    char ma[][]=new char[7][5];
+    char le='A';
+    for(int i=0;i<7;i++){
+        for(int j=0;j<5;j++){
+        ma[i][j]=le;
+        le++;
+    }
+    }
+    System.out.println("El arreglo ordenado es:");
+     for(int i=0;i<7;i++){
+        for(int j=0;j<5;j++){
+        System.out.print(" "+ma[i][j]);
+    }
+    System.out.println("");
+    }
+    }
+}

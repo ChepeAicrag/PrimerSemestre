@@ -1,0 +1,31 @@
+import java.util.*;
+public class ORDENADOCHAR1
+{
+    public static void main(){
+    Scanner leer=new Scanner(System.in);
+    int x=10;
+    char [] arreglo=new char[x];
+    System.out.println("Los elemenos del arreglo son");
+    for(int i=0;i<x;i++){
+        System.out.println("Arrelgo en la poscion ["+i+"]:");
+        arreglo[i]=leer.next().charAt(0);
+    }
+    System.out.printf("\nEl arreglo desordenado es:");
+     for(int j=0;j<10;j++){
+        System.out.printf(" "+arreglo[j]);
+     }
+    for(int i=0;i<x-1;i++){
+        for(int j=0;j<x-1;j++){
+           if(arreglo[j]>arreglo[j+1]){
+            char aux=arreglo[j];
+            arreglo[j]=arreglo[j+1];
+            arreglo[j+1]=aux;
+        }
+      }
+    }
+    System.out.printf("El arreglo ordenado es:");
+    for(int i=0;i<x;i++){
+        System.out.printf(" "+arreglo[i]);
+    }
+    }
+}

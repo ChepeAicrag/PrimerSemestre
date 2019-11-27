@@ -1,0 +1,19 @@
+/**PROGRAMA CON IF*/
+import java.util.*;
+public class conif
+{
+    public static void main(String[]args){
+    Scanner n=new Scanner(System.in); 
+    System.out.println("Introduzca su numero");
+    int op=n.nextInt();
+    if(op>0){
+      System.out.println("Su numero es positivo");
+    }
+    if(op==0){
+      System.out.println("Su numero no es ni positivo ni negativo");
+    }
+    else{
+      System.out.println("Su numero es negativo");
+    }
+}
+}

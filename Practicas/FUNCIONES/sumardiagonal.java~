@@ -1,0 +1,38 @@
+import java.util.*;
+public class sumardiagonal
+{
+    public static void main(){
+    Scanner leer=new Scanner(System.in);
+    int d=0,p=0;
+    System.out.println("Introduce el valor de la fila");
+    int f=leer.nextInt();
+    System.out.println("Introduce el valor de la columna");
+    int c=leer.nextInt();
+    int matriz1[][]=llena(f,c);
+    int mat3[][]=new int[f][c];
+    System.out.println("\nLa diagonal de la matriz es ");
+    imprimir(matriz1,f,c);
+    } 
+    public static int[][] llena(int f,int c){
+    Scanner leer=new Scanner(System.in);
+    int mat[][]=new int [f][c];
+    for(int i=0;i<f;i++){
+     for(int j=0;j<c;j++){
+         System.out.printf("Introduce el elemento del arreglo["+i+"]["+j+"]:");
+         mat[i][j]=leer.nextInt();
+     }
+    } 
+    return mat;
+    }
+    
+    public static void imprimir(int matriz[][],int f,int c){ 
+    for(int i=0;i<matriz.length;i++){
+     for(int j=0;j<matriz[i].length;j++){
+         if(i==j){
+        System.out.printf(matriz[i][j]+" ");
+     }
+    }
+    }
+    } 
+
+}

@@ -1,0 +1,23 @@
+/**examen practicando */
+import java.util.*;
+public class practicaparaelexamen
+{
+   public static void main(String[]arg){
+    Scanner n=new Scanner(System.in);
+    System.out.println("ELige una de las opciones\n a-pegar b-dormir c-cagar");
+    char op=n.next().charAt(0);
+    switch(op){
+         case 'a':
+         System.out.println("Esta golpeando");
+         break;
+         case 'b':
+         System.out.println("Esta durmiendo");
+         break;
+         case 'c':
+         System.out.println("Esta cagando");
+         break;
+         default:
+         System.out.println("Error");
+    }
+    }
+}

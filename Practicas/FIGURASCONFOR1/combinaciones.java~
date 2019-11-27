@@ -1,0 +1,31 @@
+import java.util.*;
+public class combinaciones
+{
+     public static void main(){   
+    Scanner p= new Scanner(System.in);
+    System.out.println("Introduce el nivel del piso");
+    int ni=p.nextInt();     
+    for(int i=0;i<=ni;i++){      
+      for( int x=0;x<=(ni-i);x++){ //for para los espacios
+         System.out.printf(" ");
+       }
+      for(int t=i;t>=0;t--){ //for para controlar la repeticion de las combinaciones 
+         double m=1;
+         double k=1;
+         double l=1;
+         double h=i-t;
+           for(int c=(int)m;c<=i;c++){ //para factorial de el nivel que no se mueve
+             m*=c; 
+            }
+           for(int c=(int)k;c<=t;c++){ //para factorial de k
+            k*=c;
+            }
+           for(int c=(int)l;c<=h;c++){ //factorial de la diferencia de n y k
+             l*=c;
+            }
+               System.out.print((m/(k*l))+" ");
+      }
+         System.out.print("\n");
+ }  
+    }
+}
