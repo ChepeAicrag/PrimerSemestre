@@ -1,9 +1,0 @@
-/**IMPRIMIR PRIMEROS 10 NUMEROS*/
-public class numero10for
-{
-    public static void main(){
-    for(int x=1;x<=10;x++){
-      System.out.println(" "+x);
-     }
-    }
-}
